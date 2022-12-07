@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="./lottery_reduce.js"></script>
+
+   <link rel="stylesheet" href="./css/index.css">
+   <link rel="shortcut icon" href="./img/title.ico">
+
+   <title>射了</title>
+</head>
+<body>
+   <div class="game-box">
+      <div id="showNumber" class="door-number"></div>
+      <div class="transition-game-box">
+         <img class="transition-game" src="./img/next_game.gif" alt="">
+      </div>
+      <div class="slect-content">
+         <span id=checkNumber></span>
+         <span id=select></span>
+         <a href="javascript:;" class="football" onclick="lotteryGame.gameController(1,13)"></a>
+      </div>
+      <a href="javascript:;" class="next-game" onclick="lotteryGame.getRandom(1,13)">下一局</a>
+   </div>
+</body>
+
+</html>
